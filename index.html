@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Freekickers Silvercity</title>
+  <meta name="description" content="Freekickers Silvercity – Freizeitfußball, Community, Training, Zusammenhalt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Zur Startseite">
+        <!-- Lege dein eigenes Logo als assets/logo.png ab. Falls nicht vorhanden, wird das SVG-Logo angezeigt. -->
+        <img class="brand__logo" src="assets/logo.png" alt="Freekickers Silvercity Logo"
+             onerror="this.onerror=null; this.src='assets/logo.svg';">
+        <div class="brand__text">
+          <div class="brand__name">Freekickers Silvercity</div>
+          <div class="brand__tag">Freizeitfußball · Community · Zusammenhalt</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#projekt">Das Projekt</a>
+        <a href="#team">Das Team</a>
+        <a href="#ziele">Ziele & Pläne</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="btn btn--small" href="#support">Unterstützung</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#projekt">Das Projekt</a>
+      <a href="#team">Das Team</a>
+      <a href="#ziele">Ziele & Pläne</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#support">Unterstützung</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="pill">Freekickers Silvercity</p>
+        <h1>Fußball für alle – mit Herz, Respekt und richtig Bock.</h1>
+        <p class="lead">
+          Wir sind ein Freizeit-Projekt, das Menschen zusammenbringt: Training, Spiele, Community – ohne Stress,
+          aber mit Teamgeist.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#kontakt">Mitmachen</a>
+          <a class="btn btn--ghost" href="#projekt">Mehr erfahren</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat__num">1</div>
+            <div class="stat__label">Community</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">100%</div>
+            <div class="stat__label">Respekt</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">0</div>
+            <div class="stat__label">Ego</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="card">
+          <h3>Aktueller Status</h3>
+          <p class="muted">Schnell zeigen, ob heute Leute da sind.</p>
+
+          <div class="toggle">
+            <span id="statusText" class="status status--off">Heute: Noch offen</span>
+            <button id="statusBtn" class="btn btn--small" type="button">Status ändern</button>
+          </div>
+
+          <div class="divider"></div>
+
+          <h4>Quick-Infos</h4>
+          <ul class="list">
+            <li>📍 Treffpunkt: <span class="muted">nach Absprache</span></li>
+            <li>🕓 Training: <span class="muted">nach Terminplan</span></li>
+            <li>⚽ Niveau: <span class="muted">gemischt</span></li>
+          </ul>
+
+          <p class="small muted">
+            Tipp: Später kannst du das an Firebase koppeln, damit der Status für alle live ist.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJEKT -->
+  <section class="section" id="projekt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Das Projekt</h2>
+        <p class="muted">
+          Freekickers Silvercity steht für Freizeitfußball ohne Vereinsdruck – dafür mit
+          Struktur, fairer Kommunikation und Community.
+        </p>
+      </div>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Community</h3>
+          <p>Wir bringen Leute zusammen, die Lust auf Fußball und gute Vibes haben.</p>
+        </div>
+        <div class="card">
+          <h3>Verbindlichkeit</h3>
+          <p>Klare Termine, saubere Absprachen – damit Training und Spiele wirklich stattfinden.</p>
+        </div>
+        <div class="card">
+          <h3>Respekt</h3>
+          <p>Kein Hate, kein Ego-Trip – wir spielen fair und halten zusammen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section section--alt" id="team">
+    <div class="container">
+      <div class="section__head">
+        <h2>Das Team</h2>
+        <p class="muted">Organisiert, offen, motiviert – wir halten das Projekt am Laufen.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card person">
+          <div class="avatar">F</div>
+          <div>
+            <h3>Projektleitung</h3>
+            <p class="muted">Koordination, Termine, Struktur</p>
+          </div>
+        </div>
+
+        <div class="card person">
+          <div class="avatar">T</div>
+          <div>
+            <h3>Team-Orga</h3>
+            <p class="muted">WhatsApp/Infos, Teilnehmer</p>
+          </div>
+        </div>
+
+        <div class="card person">
+          <div class="avatar">M</div>
+          <div>
+            <h3>Medien</h3>
+            <p class="muted">Bilder, Clips, Socials</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="small muted" style="margin-top:14px;">
+        Namen/Positionen kannst du jederzeit anpassen (Text direkt in dieser Sektion).
+      </p>
+    </div>
+  </section>
+
+  <!-- ZIELE -->
+  <section class="section" id="ziele">
+    <div class="container">
+      <div class="section__head">
+        <h2>Ziele & Pläne</h2>
+        <p class="muted">Kurzfristig stabil laufen – langfristig wachsen.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Unsere Ziele</h3>
+          <ul class="list">
+            <li>✅ Regelmäßige Trainings mit fester Kommunikation</li>
+            <li>✅ Freundschaftsspiele & kleine Turniere</li>
+            <li>✅ Neue Mitspieler integrieren (gemischte Levels)</li>
+            <li>✅ Teamspirit & Respekt als Standard</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Pläne (nächste Schritte)</h3>
+          <ul class="list">
+            <li>📅 Terminplan (Kalender/Übersicht)</li>
+            <li>📊 Trainingsdaten je Termin speichern</li>
+            <li>🔒 Admin-Bereich (Rollen/Orga)</li>
+            <li>📲 Live-Status: „Wer ist heute da?“</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section section--alt" id="kontakt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Kontakt</h2>
+        <p class="muted">Schreib uns – und komm einfach mal vorbei.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Direktkontakt</h3>
+          <p class="muted">Passe die Daten an (Telefon, Mail, Insta, WhatsApp-Link).</p>
+
+          <div class="contact">
+            <div><strong>E-Mail:</strong> <a href="mailto:kontakt@freekickers-silvercity.de">kontakt@freekickers-silvercity.de</a></div>
+            <div><strong>Instagram:</strong> <a href="#" onclick="return false;">@freekickers_silvercity</a></div>
+            <div><strong>WhatsApp:</strong> <a href="#" onclick="return false;">Gruppenlink</a></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Nachricht senden</h3>
+          <form id="contactForm">
+            <label>
+              Name
+              <input name="name" type="text" placeholder="Dein Name" required>
+            </label>
+            <label>
+              Nachricht
+              <textarea name="message" rows="5" placeholder="Worum geht’s?" required></textarea>
+            </label>
+            <button class="btn" type="submit">Absenden</button>
+            <p class="small muted" id="formNote">Formular ist aktuell lokal (Demo). Für echte Mails: z.B. Formspree / Firebase Functions.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section class="section" id="support">
+    <div class="container">
+      <div class="section__head">
+        <h2>Unterstützung</h2>
+        <p class="muted">Wenn du das Projekt feiern willst – hier sind Möglichkeiten zu helfen.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Mitspielen</h3>
+          <p>Die beste Unterstützung: Komm dazu, bring Freunde mit und sei fair auf dem Platz.</p>
+          <a class="btn btn--ghost btn--small" href="#kontakt">Kontakt</a>
+        </div>
+        <div class="card">
+          <h3>Equipment</h3>
+          <p>Bälle, Leibchen, Hütchen – Spenden oder Sponsoring sind willkommen.</p>
+          <button class="btn btn--ghost btn--small" type="button" id="equipBtn">Details</button>
+        </div>
+        <div class="card">
+          <h3>Location/Platz</h3>
+          <p>Du kennst einen Platz oder eine Halle? Sag Bescheid – wir sind flexibel.</p>
+          <button class="btn btn--ghost btn--small" type="button" id="placeBtn">Vorschlagen</button>
+        </div>
+      </div>
+
+      <div class="footerbar">
+        <span class="muted small">© <span id="year"></span> Freekickers Silvercity</span>
+        <a class="muted small" href="#top">Nach oben ↑</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
